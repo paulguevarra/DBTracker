@@ -1,5 +1,6 @@
 package com.epicodus.dbtracker;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +20,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //do something
-                Toast.makeText(MainActivity.this, "Hello World!", Toast.LENGTH_LONG).show();
+//                Toast.makeText(MainActivity.this, "Hello World!", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, GamesActivity.class);
+                startActivity(intent);
             }
         });
     }
