@@ -13,7 +13,8 @@
         android:layout_marginTop="35dp"
         android:text="DB Tracker"
         android:textColor="@color/icons"
-        android:textSize="40sp" />
+        android:textSize="40sp"
+        android:id="@+id/textView" />
 
     <Button
         android:id="@+id/findGameButton"
@@ -32,4 +33,18 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         app:srcCompat="@drawable/controller" />
+
+    <EditText
+        android:id="@+id/gameSearchEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="59dp"
+        android:background="@color/divider"
+        android:ems="10"
+        android:hint="Enter Keyword"
+        android:inputType="textPersonName"
+        android:padding="5dp"
+        android:textColor="@color/primary_text"
+        android:layout_above="@+id/findGameButton"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
