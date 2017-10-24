@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String TAG = MainActivity.class.getSimpleName();
+//    public static final String TAG = MainActivity.class.getSimpleName();
     private Button mFindGameButton;
     private EditText mGameSearchEditText;
 
@@ -24,10 +24,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String gameSearch = mGameSearchEditText.getText().toString();
-                Log.d(TAG, gameSearch);
+//                Log.d(TAG, gameSearch);
                 //do something
 //                Toast.makeText(MainActivity.this, "Hello World!", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(MainActivity.this, GamesActivity.class);
+                intent.putExtra("gameSearch", gameSearch);
                 startActivity(intent);
             }
         });
